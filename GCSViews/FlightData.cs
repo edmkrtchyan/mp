@@ -2665,7 +2665,8 @@ namespace MissionPlanner.GCSViews
                 tabStatus.Visible = true;
                 tabControlactions.Visible = true;
             }
-            else if (tabControlactions.SelectedTab == tabPagemessages)
+            else if (tabControlactions.SelectedTab == tabPagemessages ||
+                     tabControlactions.SelectedTab == tabActions)
             {
                 Messagetabtimer.Start();
             }
@@ -3920,13 +3921,16 @@ namespace MissionPlanner.GCSViews
         private void Messagetabtimer_Tick(object sender, EventArgs e)
         {
             var newmsgcount = MainV2.comPort.MAV.cs.messages.Count;
+           
             if (messagecount != newmsgcount)
             {
                 try
                 {
                     StringBuilder message = new StringBuilder();
                     MainV2.comPort.MAV.cs.messages.ForEach(x => { message.Insert(0, x + "\r\n"); });
+                  
                     txt_messagebox.Text = message.ToString();
+                    txt_messagebox4Action.Text = message.ToString();
 
                     messagecount = newmsgcount;
                 }
