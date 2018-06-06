@@ -45,6 +45,7 @@ namespace MissionPlanner
             this.MenuFlightPlanner = new System.Windows.Forms.ToolStripButton();
             this.MenuInitConfig = new System.Windows.Forms.ToolStripButton();
             this.MenuConfigTune = new System.Windows.Forms.ToolStripButton();
+            this.MenuCompass = new System.Windows.Forms.ToolStripButton();
             this.MenuSimulation = new System.Windows.Forms.ToolStripButton();
             this.MenuTerminal = new System.Windows.Forms.ToolStripButton();
             this.MenuHelp = new System.Windows.Forms.ToolStripButton();
@@ -71,6 +72,7 @@ namespace MissionPlanner
             this.MenuFlightPlanner,
             this.MenuInitConfig,
             this.MenuConfigTune,
+            this.MenuCompass,
             this.MenuSimulation,
             this.MenuTerminal,
             this.MenuHelp,
@@ -163,6 +165,15 @@ namespace MissionPlanner
             this.MenuConfigTune.Name = "MenuConfigTune";
             this.MenuConfigTune.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.MenuConfigTune.Click += new System.EventHandler(this.MenuTuning_Click);
+            // 
+            // MenuCompass
+            // 
+            this.MenuCompass.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.MenuCompass, "MenuCompass");
+            this.MenuCompass.Margin = new System.Windows.Forms.Padding(0);
+            this.MenuCompass.Name = "MenuCompass";
+            this.MenuCompass.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.MenuCompass.Click += new System.EventHandler(this.MenuCompass_Click);
             // 
             // MenuSimulation
             // 
@@ -292,5 +303,7 @@ namespace MissionPlanner
         private System.Windows.Forms.ToolStripMenuItem connectionOptionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton MenuArduPilot;
         private System.Windows.Forms.ToolStripMenuItem connectionListToolStripMenuItem;
+
+        public System.Windows.Forms.ToolStripButton MenuCompass;
     }
 }

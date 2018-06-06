@@ -24,12 +24,12 @@ namespace MissionPlanner.GCSViews
 
         public bool isConnected
         {
-            get { return MainV2.comPort.BaseStream.IsOpen; }
+            get { return true; }// MainV2.comPort.BaseStream.IsOpen; }
         }
 
         public bool isDisConnected
         {
-            get { return !MainV2.comPort.BaseStream.IsOpen; }
+            get { return false; }// !MainV2.comPort.BaseStream.IsOpen; }
         }
 
         public bool isTracker

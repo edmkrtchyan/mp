@@ -21,6 +21,7 @@ using System.Collections.Concurrent;
 using System.Net.Sockets;
 using System.Text.RegularExpressions;
 using MissionPlanner.ArduPilot;
+using MissionPlanner.GCSViews.ConfigurationView;
 
 namespace MissionPlanner
 {
@@ -3701,6 +3702,22 @@ namespace MissionPlanner
             catch
             {
                 CustomMessageBox.Show("Link open failed. check your default webpage association");
+            }
+        }
+
+        
+        private void MenuCompass_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //MessageBox.Show("Compass");
+                //MyView.ShowScreen("HWConfig");
+                ConfigHWCompass cmp = new ConfigHWCompass();
+                cmp.Activate();
+            }
+            catch(Exception ex)
+            {
+                CustomMessageBox.Show(ex.Message);
             }
         }
 
