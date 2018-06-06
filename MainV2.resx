@@ -496,6 +496,10 @@
   <data name="MenuSimulation.ToolTipText" xml:space="preserve">
     <value>Simulation</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MenuSimulation.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="MenuTerminal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 6pt</value>
   </data>
@@ -541,6 +545,9 @@
   </data>
   <data name="MenuTerminal.ToolTipText" xml:space="preserve">
     <value>Terminal</value>
+  </data>
+  <data name="MenuTerminal.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="MenuHelp.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 6pt</value>
@@ -597,6 +604,9 @@
   <data name="MenuHelp.ToolTipText" xml:space="preserve">
     <value>Help</value>
   </data>
+  <data name="MenuHelp.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="MenuDonate.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 6pt</value>
   </data>
@@ -618,7 +628,6 @@
   <data name="MenuDonate.ToolTipText" xml:space="preserve">
     <value>Donate</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="MenuDonate.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -2539,7 +2548,7 @@
     <value>toolStripConnectionControl</value>
   </data>
   <data name="&gt;&gt;toolStripConnectionControl.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ToolStripConnectionControl, MissionPlanner, Version=1.3.52.10, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ToolStripConnectionControl, MissionPlanner, Version=1.3.56.3, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;MenuArduPilot.Name" xml:space="preserve">
     <value>MenuArduPilot</value>
