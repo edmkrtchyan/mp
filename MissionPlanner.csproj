@@ -692,7 +692,7 @@
     <EmbeddedResource Include="OSDVideo.resx"><DependentUpon>OSDVideo.cs</DependentUpon> </EmbeddedResource>
     <EmbeddedResource Include="paramcompare.resx"><DependentUpon>paramcompare.cs</DependentUpon> </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RAW_Sensor.resx"><DependentUpon>RAW_Sensor.cs</DependentUpon> </EmbeddedResource>
